@@ -2,3 +2,4 @@
 .anchor
 /target
 /node_modules
+scripts/node_modules
