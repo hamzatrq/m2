@@ -1764,30 +1764,6 @@ export type M2 = {
           }
         ]
       }
-    },
-    {
-      "name": "DestinationSpecifier",
-      "type": {
-        "kind": "enum",
-        "variants": [
-          {
-            "name": "Key",
-            "fields": [
-              {
-                "defined": "&'refsPubkey"
-              }
-            ]
-          },
-          {
-            "name": "Ai",
-            "fields": [
-              {
-                "defined": "&'refsAccountInfo<'a>"
-              }
-            ]
-          }
-        ]
-      }
     }
   ],
   "errors": [
@@ -3747,30 +3723,6 @@ export const IDL: M2 = {
           {
             "name": "expiry",
             "type": "i64"
-          }
-        ]
-      }
-    },
-    {
-      "name": "DestinationSpecifier",
-      "type": {
-        "kind": "enum",
-        "variants": [
-          {
-            "name": "Key",
-            "fields": [
-              {
-                "defined": "&'refsPubkey"
-              }
-            ]
-          },
-          {
-            "name": "Ai",
-            "fields": [
-              {
-                "defined": "&'refsAccountInfo<'a>"
-              }
-            ]
           }
         ]
       }

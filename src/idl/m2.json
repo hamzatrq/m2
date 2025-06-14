@@ -1764,30 +1764,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "DestinationSpecifier",
-      "type": {
-        "kind": "enum",
-        "variants": [
-          {
-            "name": "Key",
-            "fields": [
-              {
-                "defined": "&'refsPubkey"
-              }
-            ]
-          },
-          {
-            "name": "Ai",
-            "fields": [
-              {
-                "defined": "&'refsAccountInfo<'a>"
-              }
-            ]
-          }
-        ]
-      }
     }
   ],
   "errors": [
@@ -1981,8 +1957,5 @@
       "name": "MissingRemainingAccount",
       "msg": "Missing remaining account"
     }
-  ],
-  "metadata": {
-    "address": "M2mx93ekt1fmXSVkTrUL9xVFHkmME8HTUi5Cyc5aF7K"
-  }
+  ]
 }

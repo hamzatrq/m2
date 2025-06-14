@@ -11,7 +11,7 @@ use solana_program::{
 use super::{assert_initialized, assert_is_ata, assert_keys_equal, is_token_owner, make_ata};
 use crate::errors::ErrorCode;
 
-pub enum DestinationSpecifier<'refs, 'a> {
+pub(crate) enum DestinationSpecifier<'refs, 'a> {
     Key(&'refs Pubkey),
     Ai(&'refs AccountInfo<'a>),
 }
@@ -32,7 +32,7 @@ pub enum DestinationSpecifier<'refs, 'a> {
 /// * `system_program` - System program
 /// * `optional_new_owner` - If Some, will allow the destination token account to be owned by this instead of the destination owner
 /// * `signer_seeds` - Seeds for the source_authority if needed
-pub fn transfer_token<'refs, 'a>(
+pub(crate) fn transfer_token<'refs, 'a>(
     amount: &u64,
     payer: &'refs AccountInfo<'a>,
     source_authority: &'refs AccountInfo<'a>,
