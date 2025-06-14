@@ -1,0 +1,42 @@
+{
+  "name": "m2-marketplace-deployer",
+  "version": "1.0.0",
+  "description": "Interactive deployment script for M2 NFT Marketplace",
+  "main": "deploy.ts",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "ts-node deploy.ts",
+    "verify": "ts-node verify.ts",
+    "dev": "ts-node-dev deploy.ts"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/web3.js": "^1.87.6",
+    "@solana/spl-token": "^0.3.11",
+    "inquirer": "^9.2.12",
+    "dotenv": "^16.3.1",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "bs58": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0"
+  },
+  "keywords": [
+    "solana",
+    "nft",
+    "marketplace",
+    "anchor",
+    "deployment",
+    "typescript"
+  ],
+  "author": "M2 Marketplace Team",
+  "license": "MIT"
+}
